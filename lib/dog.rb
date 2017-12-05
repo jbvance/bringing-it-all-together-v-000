@@ -48,10 +48,6 @@ class Dog
     self.create(name: name, breed: breed)
   end
 
-  def self.find_or_create_by(name:, breed:)
-    
-  end
-
   def self.create_table
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS dogs (
