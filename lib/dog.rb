@@ -18,7 +18,7 @@ class Dog
     DB[:conn].execute(sql)
   end
 
-  def drop_table
+  def self.drop_table
     sql = "DROP TABle IF EXISTS dogs"
     DB[:conn].execute(sql)
   end
